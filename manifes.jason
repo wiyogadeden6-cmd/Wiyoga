@@ -1,0 +1,15 @@
+{
+  "name": "WIYOGA - Kamus Keperawatan",
+  "short_name": "WIYOGA",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0f8a8a",
+  "theme_color": "#0f8a8a",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
