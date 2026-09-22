@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WIYOGA</title>
+<style>
+body{font-family:sans-serif;background:#0f8a8a;color:white;text-align:center;padding:20px}
+.box{background:white;color:#333;padding:15px;border-radius:16px;margin-top:20px;text-align:left}
+input{width:100%;padding:12px;border-radius:8px;border:2px solid #0f8a8a;box-sizing:border-box}
+</style>
+</head>
+<body>
+<h1>WIYOGA</h1>
+<p>Kamus Keperawatan</p>
+<div class="box">
+<input id="cari" placeholder="Cari: Hipertensi..." oninput="cari()">
+<div id="hasil"></div>
+</div>
+<script>
+let d=[["Hipertensi","Darah tinggi >140/90"],["Anemia","Kurang darah"],["Dyspnea","Sesak napas"],["Edema","Bengkak cairan"],["Vertigo","Pusing berputar"]];
+function cari(){let k=document.getElementById('cari').value.toLowerCase();let f=d.filter(x=>x[0].toLowerCase().includes(k));document.getElementById('hasil').innerHTML=f.map(x=>`<p><b>${x[0]}</b><br>${x[1]}</p>`).join('')}
+cari();
+</script>
+</body>
+</html>
